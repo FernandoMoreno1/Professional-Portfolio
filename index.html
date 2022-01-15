@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Assets/css/style.css">
+    <title>My Portfolio</title>
+</head>
+
+<body>
+
+    <!-- navigation tags - block level element -->
+    <header>
+        <h1>
+            Fernando Moreno
+        </h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#About-Me">About Me</a>
+                </li>
+                <li>
+                    <a href="#Work">Work</a>
+                </li>
+                <li>
+                    <a href="#Contact-Me">Contact Me</a>
+                </li>
+                <li>
+                    <a href="resume.html">Resume</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- end navigation -->
+
+
+
+    <!-- hero/jumbotron -->
+    <section class="hero">
+        <div class="hero-cta">
+            <h2></h2>
+        </div>
+
+        <div class="hero-form">
+            <p></p>
+        </div>
+    </section>
+    <!-- end header -->
+
+    <!-- about me  -->
+    <section id="About-Me" class="About-Me">
+        <div class="About-Me-Title">
+            <h2>About Me</h2>
+        </div>
+
+        <div class="Biography">
+            <p>
+                Helvetica put a bird on it church-key Blue Bottle banjo bespoke brunch Etsy authentic Marfa quinoa
+                typewriter plaid direct trade small batch wayfarers bicycle rights cliche craft beer gastropub
+                single-origin coffee Godard Carles you probably haven't heard of them irony pickled kitsch synth
+                sriracha gentrify literally heirloom blog Truffaut paleo scenester
+            </p>
+
+            <p>
+                Echo Park sriracha Pinterest vegan biodiesel 90's irony iPhone Kickstarter Carles crucifix kitsch
+                narwhal dreamcatcher pickled trust fund selvage art party letterpress Tumblr post-ironic kogi
+                Thundercats Tonx Brooklyn Pitchfork Odd Future authentic normcore freegan leggings Schlitz chambray
+                organic tousled retro fap squid street art church-key fashion axe Wes Anderson bespoke whatever gentrify
+                banh mi you probably haven't heard of them American Apparel next level pag ugh.
+            </p>
+        </div>
+    </section>
+    <!-- about me  -->
+
+    <!-- hero/jumbotron -->
+    <section id="Work" class="Work">
+        <div class="Work-Title">
+            <h2>Work</h2>
+        </div>
+
+        <div class="Work-Boxes">
+
+            <div onclick="projectClicked('run-buddy')" class="Box1"></div>
+
+            <div class="upper-boxes">
+                <div onclick="projectClicked('')" class="Box2"></div>
+                <div onclick="projectClicked('')" class="Box3">Coming Soon</div>
+            </div>
+
+            <div class="lower-boxes">
+                <div onclick="projectClicked('')" class="Box4">Coming Soon</div>
+                <div onclick="projectClicked('')" class="Box5">Coming Soon</div>
+            </div>
+        </div>
+
+    </section>
+    <!-- end header -->
+
+    <!-- hero/jumbotron -->
+    <section id="Contact-Me" class="Contact-Me">
+        <div class="Contact-Me-Title">
+            <h2>Contact Me</h2>
+        </div>
+
+        <div class="Contact-Me-form">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="tel:8484560000">848.456.0000</a>
+                    </li>
+
+                    <li>
+                        <a href="lernantino@gmail.com">Email</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/FernandoMoreno1">Github</a>
+                    </li>
+
+                    <li>
+                        <a href="https://twitter.com/?lang=en">Twitter</a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.spotify.com/us/">Spotify</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <!-- end header -->
+
+    <!-- javascript function direct user to the appropiate landing page based on work project grid cell clicked -->
+    <script>
+        function projectClicked(input) { /* Function receives 1 string argument for conditional check */
+            var input = input; /* Assigned in put to a variable for conditional check */
+
+            if (input == "run-buddy") { /* If else statement to determine url to go */
+                /* Javascript window.class to open page */
+                window.open("https://fernandomoreno1.github.io/run-buddy/");
+            } else if (input == 'Horiseon') {
+                window.open("https://fernandomoreno1.github.io/Horiseon/");
+            } else {
+                return true; /* Return true - No used as of now but semanticly correct */
+            }
+        };
+
+    </script>
+
+</body>
